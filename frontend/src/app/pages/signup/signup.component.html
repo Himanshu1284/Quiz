@@ -1,0 +1,100 @@
+
+    <div class="bootstrap-wrapper">
+
+
+        <div class="container mt-5">
+         
+            <div class="col-md-6 offset-md-3">
+              <mat-card>
+               
+
+                <div class="container text-center">
+                  <img src="../../../assets/logo2.png" alt="" />
+                </div>
+                <div class="container text-center">
+                  
+                    <h1>Sign Up</h1>
+    
+                    <h3>
+                        Enter Your Details!!
+                    </h3>
+                    <form (ngSubmit)="formSubmit()">
+    
+                            <!--//user name-->
+                            <mat-form-field class="row" appearance="outline">
+                                <mat-label>User Name</mat-label>
+                                <input  [(ngModel)]="user.username"
+                                required
+                                name="username"
+                                 matInput placeholder="User Name">
+                                 <mat-hint>User Name must be unique!!</mat-hint>
+                              </mat-form-field>
+    
+                              <!--//Password-->
+                            <mat-form-field class="row" appearance="outline">
+                                <mat-label>Password</mat-label>
+                                <input [(ngModel)]="user.password"
+                                required
+                                name="password"
+                                type="password"
+                                matInput placeholder="Password">
+                              </mat-form-field>
+    
+                             <!-- //First name-->
+                              <mat-form-field class="row" appearance="outline">
+                                <mat-label>First Name</mat-label>
+                                <input [(ngModel)]="user.firstname"
+                                required
+                                name="firstname"
+                                matInput placeholder="First Name">
+                              </mat-form-field>
+    
+                             <!-- //last name-->
+                              <mat-form-field class="row"  appearance="outline">
+                                <mat-label>Last Name</mat-label>
+                                <input [(ngModel)]="user.lastname"
+                                required
+                                name="lastname"
+                                matInput placeholder="Last Name">
+                              </mat-form-field>
+    
+                             <!-- //Email-->
+                              <mat-form-field class="row"  appearance="outline">
+                                <mat-label>Email Address</mat-label>
+                                <input [(ngModel)]="user.email"
+                                required
+                                name="email"
+                                type="email"
+                                matInput placeholder="Email Address">
+                                <mat-hint>We'll keep your data safe!!</mat-hint>
+                              </mat-form-field>
+    
+                              <!--//Phone number-->
+                              <mat-form-field class="row"  appearance="outline">
+                                <mat-label>Phone Number</mat-label>
+                                <input [(ngModel)]="user.phone"
+                                required
+                                name="phone"
+                                type="number"
+                                matInput placeholder="Phone Number">
+                                <mat-hint>We'll keep your data safe!!</mat-hint>
+                              </mat-form-field>
+    
+                              
+
+                              <!--Signup-->
+                              <button type="submit" mat-raised-button color="primary">Sign Up</button>
+
+
+                              <!--clear-->
+                              <button type="reset" style="margin-left: 15px" mat-raised-button color="warn">Clear</button>
+
+                        
+                    </form>
+                </div>
+              </mat-card>
+            </div>
+    
+         
+        </div>
+    </div>
